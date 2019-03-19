@@ -1,0 +1,30 @@
+{
+  "testEnvironment": "jsdom",
+  "rootDir": "./",
+  "moduleFileExtensions": [
+    "js",
+    "jsx",
+    "json"
+  ],
+  "moduleDirectories": [
+    "node_modules",
+    "shared"
+  ],
+  "moduleNameMapper": {},
+  "testPathIgnorePatterns": [
+    "<rootDir>/node_modules/"
+  ],
+  "collectCoverageFrom": [
+    "src/**/*.js",
+    "src/**/*.jsx",
+    "!src/index.jsx",
+    "!**/node_modules/**"
+  ],
+  "transform": {
+    "^.+\\.js$": "babel-jest",
+    "^.+\\.jsx$": "babel-jest"
+  },
+  "setupFiles": [
+    "./src/test/setupTests.js"
+  ]
+}
