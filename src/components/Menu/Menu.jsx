@@ -11,11 +11,6 @@ const menuItems = [
     label: 'Random Cat Pic',
     exact: true,
   },
-  {
-    to: '/memes/',
-    label: 'Memes',
-    exact: true,
-  },
 ];
 
 
