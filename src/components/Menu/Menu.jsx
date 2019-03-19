@@ -5,7 +5,7 @@ import MenuItem from './MenuItem';
 import './style.scss';
 
 
-const menuItems = [
+export const menuItems = [
   {
     to: '/',
     label: 'Random Cat Pic',

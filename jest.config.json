@@ -1,5 +1,7 @@
 {
-  "testEnvironment": "jsdom",
+  "bail": true,
+  "browser": true,
+  "testURL": "http://localhost/",
   "rootDir": "./",
   "moduleFileExtensions": [
     "js",
@@ -14,15 +16,25 @@
   "testPathIgnorePatterns": [
     "<rootDir>/node_modules/"
   ],
+  "snapshotSerializers": [
+    "enzyme-to-json/serializer"
+  ],
   "collectCoverageFrom": [
     "src/**/*.js",
     "src/**/*.jsx",
     "!src/index.jsx",
-    "!**/node_modules/**"
+    "!**/node_modules/**",
+    "!**/index.js",
+    "!**/constants/**"
   ],
+  "coverageThreshold": {
+    "global": {
+    }
+  },
   "transform": {
     "^.+\\.js$": "babel-jest",
-    "^.+\\.jsx$": "babel-jest"
+    "^.+\\.jsx$": "babel-jest",
+    "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga|html|scss)$": "<rootDir>/src/test/fileTransformer.js"
   },
   "setupFiles": [
     "./src/test/setupTests.js"
