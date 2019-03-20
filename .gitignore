@@ -12,6 +12,5 @@ coverage/
 
 ## Files
 yarn.lock
-package-lock.json
 yarn-error.log
 npm-debug.log
