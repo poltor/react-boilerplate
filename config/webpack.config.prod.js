@@ -26,7 +26,7 @@ module.exports = merge(webpackConfig, {
         sourceMap: true,
       }),
       new OptimizeCSSAssetsPlugin({})
-    ]
+    ],
   },
   plugins: [
     new HtmlWebpackPlugin({
