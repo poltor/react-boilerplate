@@ -23,9 +23,10 @@
     "src/**/*.js",
     "src/**/*.jsx",
     "!src/index.jsx",
+    "!src/test/**",
+    "!src/store/**",
     "!**/node_modules/**",
-    "!**/index.js",
-    "!**/constants/**"
+    "!**/index.js"
   ],
   "coverageThreshold": {
     "global": {

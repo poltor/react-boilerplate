@@ -4,14 +4,14 @@ import faker from 'faker';
 import { NavLink } from 'react-router-dom';
 import { MemoryRouter } from 'react-router';
 
-import { MenuItem } from '../MenuItem';
+import MenuItem from '../MenuItem';
 
 
 describe('MenuItem (Component)', () => {
   let props;
 
   const render = () => mount(
-    <MemoryRouter initialEntries={[`/${faker.random.word()}`]}>
+    <MemoryRouter initialEntries={[`/`]}>
       <MenuItem {...props} />
     </MemoryRouter>
   );

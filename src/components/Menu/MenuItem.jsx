@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom';
 
 
 
-export class MenuItem extends PureComponent {
+class MenuItem extends PureComponent {
 
   render() {
     const { to, label, exact } = this.props;
