@@ -9,7 +9,7 @@ const appHtmlTitle = '';
 
 
 module.exports = merge(webpackConfig, {
-  devtool: 'eval',
+  devtool: 'cheap-module-eval-source-map',
   output: {
     pathinfo: true,
     publicPath: '/',

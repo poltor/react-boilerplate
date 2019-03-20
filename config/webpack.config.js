@@ -1,6 +1,7 @@
 const path = require('path');
 const webpack = require('webpack');
 const paths = require('./paths');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 const IS_DEV = (process.env.NODE_ENV === 'dev');
 
@@ -45,7 +46,7 @@ module.exports = {
         test: /\.scss$/,
         loader: [
           {
-            loader: 'style-loader',
+            loader: IS_DEV ? 'style-loader' : MiniCssExtractPlugin.loader,
           },
           {
             loader: 'css-loader',
