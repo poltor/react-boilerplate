@@ -7,7 +7,9 @@ import sagaMonitor from '@redux-saga/simple-saga-monitor';
 import DevTools from '../containers/DevTools';
 import rootReducer from '../reducers';
 
+
 export const history = createBrowserHistory();
+
 
 export default function configureStore(initialState) {
   const sagaMiddleware = createSagaMiddleware({ sagaMonitor });

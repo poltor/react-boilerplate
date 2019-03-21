@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { Helmet } from 'react-helmet';
 import { Route, Switch } from 'react-router'
-import { ConnectedRouter } from 'connected-react-router'
+import { ConnectedRouter } from 'connected-react-router';
+import { BrowserRouter } from 'react-router-dom';
 
 import routes from '../routes';
 import { history } from '../store/configureStore';
@@ -12,7 +13,7 @@ class App extends Component {
 
   render() {
     return (
-      <ConnectedRouter history={history}>
+      <BrowserRouter>
         <div>
           <Helmet>
             <meta charSet="utf-8" />
@@ -30,7 +31,7 @@ class App extends Component {
             ))}
           </Switch>
         </div>
-      </ConnectedRouter>
+      </BrowserRouter>
     );
   }
 
